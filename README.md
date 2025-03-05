@@ -1,3 +1,4 @@
+# Vì một vài lí do nên em đã xóa repo cũ do mất commit và em tạo repo mới thay thế
 # Bài tập về nhà
 > - Author: Nguyễn Văn Hải 
 > - Class: K57KMT
