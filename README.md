@@ -19,27 +19,34 @@
 --------------------
 Ứng dụng đã build và test trên máy thật
 ### 1. Hiển thị thông tin sinh viên trên Dialog
-![image](![z6339854175573_c50fb81beed8dc2f371e2e4fbf35c180](https://github.com/user-attachments/assets/f3980e0c-5e51-4ecc-8788-a12ac9a5ae75)
+![image]![Ảnh chụp màn hình 2025-03-05 201621](https://github.com/user-attachments/assets/203506e6-f42d-46fa-aca7-75d38cd82151)
+
 
 ---------------
 
 ### 2. Xây dựng giao diện khi chọn các tuỳ chọn
-![image](![z6339997916894_d3ef48b4a5017ec574dc9e6851b69dd3](https://github.com/user-attachments/assets/a6dbdd56-fd86-4920-b0ce-0b4eeaa6a335)
+![image]![Ảnh chụp màn hình 2025-03-05 201621](https://github.com/user-attachments/assets/c6df6bcb-9e52-42f0-92a9-c461e9c6fc10)
+
 
 
 ### 3. Xây dựng WebApp hiển thị một button quà tặng, phát file nhạc mp3, phát file video mp4
 
-![image](![z6339854175573_c50fb81beed8dc2f371e2e4fbf35c180](https://github.com/user-attachments/assets/fa27007b-6a99-4e45-9619-424a327c17fb)
+![image]![Ảnh chụp màn hình 2025-03-05 205211](https://github.com/user-attachments/assets/6187a951-2fd2-4222-b68a-31cf8e1525f7)
+
 
 ---------------
 
 ### - Hiển thị một button quà tặng
-![image](![z6339854446975_a0e447865f60017eec8b551c64ffbe38](https://github.com/user-attachments/assets/438b4242-b7d8-4505-928f-64221ef45118)
+![image]![Ảnh chụp màn hình 2025-03-05 205158](https://github.com/user-attachments/assets/1461a3e1-0473-4912-b7d8-997c3c7682af)
+
 
 --------------
 
 ### - Phát file nhạc mp3 và phát file mp4
-![image](![z6339854284209_cb85f07dc74767c7c27741b200ee4708](https://github.com/user-attachments/assets/1b0329ba-6ec4-4461-83ed-aefbee63b4ed)
+![image]![Ảnh chụp màn hình 2025-03-05 205211](https://github.com/user-attachments/assets/24d97cf0-b8cc-4b94-b0ee-a861898f53a3)
+![image]![Ảnh chụp màn hình 2025-03-05 205222](https://github.com/user-attachments/assets/508fd608-34ce-4001-8cd9-29ea1fd6bde6)
+
+
 
 ![image]
 
