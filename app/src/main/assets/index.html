@@ -3,83 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebApp với JavaScript</title>
+    <title>Quà Tặng Đặc Biệt</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             text-align: center;
-            margin-top: 50px;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 18px;
+            color: #fff;
+            max-width: 500px;
+            line-height: 1.5;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 10px;
         }
         button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s;
         }
-        #giftImage {
-            display: none; /* Ẩn hình ảnh khi trang tải */
-            margin-top: 20px;
-            max-width: 100%;
-            height: auto;
+        button:hover {
+            transform: scale(1.1);
+        }
+        #giftButton {
+            background-color: #ff4b5c;
+            color: white;
         }
         #exitButton {
-            display: none; /* Ẩn nút thoát ảnh ban đầu */
+            background-color: #222;
+            color: white;
+            display: none;
+        }
+        #giftImage {
+            display: none;
             margin-top: 20px;
+            max-width: 90%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+        audio, video {
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
     </style>
 </head>
 <body>
-<h1>WELCOME TO COMING !!!</h1>
-<p id="greeting">Nhấn nút bên dưới để nhận quà nhé.</p>
+<h1>🎁 BẠN ĐÃ SẴN SÀNG NHẬN QUÀ? 🎁</h1>
+<p id="greeting">Nhấn vào nút dưới đây để khám phá món quà đặc biệt dành cho bạn!</p>
 
-<!-- Nút tương tác -->
-<button onclick="showImage()">Nhấn vào đây</button>
+<button id="giftButton" onclick="showImage()">Nhận quà ngay</button>
+<button id="exitButton" onclick="hideImage()">Ẩn quà</button>
 
-<!-- Nút thoát ảnh -->
-<button id="exitButton" onclick="hideImage()">Thoát ảnh</button>
+<img id="giftImage" src="anh.jpg" alt="Món quà đặc biệt" />
 
-<!-- Hình ảnh sẽ hiển thị khi người dùng nhấn nút -->
-<img id="giftImage" src="muquang.jpg" alt="Quà tặng" />
-
-<!-- Mô tả MP3 -->
-<p><strong>Bài hát TOP TRENDING:</strong> YÊU 5 - Ca sĩ: Lyrics</p>
+<p><strong>🔥 GÓC ÂM NHẠC:</strong> Chân Ngắn - Cẩm Vân (Duck Pink - HoangMP Remix)</p>
 <audio controls>
-    <source src="video.mp3" type="audio/mpeg">
-    Trình duyệt của bạn không hỗ trợ phát âm thanh.
+    <source src="nhac.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ phát nhạc.
 </audio>
 
-<!-- Mô tả MP4 -->
-<p><strong>VIDEO TRUYỀN ĐỘNG LỰC:</strong> Video hài hước giảm stress căng thẳng mệt mỏi</p>
+<p><strong>🎥 VIDEO GIẢI TRÍ:</strong> Video hài hước giúp bạn thư giãn sau ngày dài</p>
 <video controls width="320" height="240">
-    <source src="concainit.mp4" type="video/mp4">
+    <source src="video.mp4" type="video/mp4">
     Trình duyệt của bạn không hỗ trợ phát video.
 </video>
 
 <script>
     function showImage() {
-        // Thay đổi văn bản trong thẻ <p> khi nút được nhấn
-        const greeting = document.getElementById("greeting");
-        greeting.innerText = "Quà của bạn đây rồi!";
-
-        // Hiển thị hình ảnh
-        const image = document.getElementById("giftImage");
-        image.style.display = "block"; // Đặt lại display của hình ảnh thành block để hiển thị
-
-        // Hiển thị nút thoát ảnh
-        const exitButton = document.getElementById("exitButton");
-        exitButton.style.display = "inline-block"; // Hiển thị nút thoát ảnh
-
-        // Hiển thị thông báo
-        alert("Bạn chắc chắn chọn chứ?");
+        document.getElementById("greeting").innerText = "Wow! Đây là món quà dành riêng cho bạn!";
+        document.getElementById("giftImage").style.display = "block";
+        document.getElementById("exitButton").style.display = "inline-block";
+        alert("Bất ngờ chưa? Món quà đã sẵn sàng!");
     }
 
     function hideImage() {
-        // Ẩn hình ảnh
-        const image = document.getElementById("giftImage");
-        image.style.display = "none";
-
-        // Ẩn nút thoát ảnh
-        const exitButton = document.getElementById("exitButton");
-        exitButton.style.display = "none";
+        document.getElementById("giftImage").style.display = "none";
+        document.getElementById("exitButton").style.display = "none";
     }
 </script>
 </body>

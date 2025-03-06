@@ -95,13 +95,6 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/btn_xemtt"
-            android:layout_width="10dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:text="Thông tin" />
-
-        <Button
             android:id="@+id/btn_webapp"
             android:layout_width="10dp"
             android:layout_height="60dp"
@@ -109,11 +102,12 @@
             android:text="Webapp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_xemtt"
             android:layout_width="10dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
-            android:text="Area Circle" />
+            android:text="Thông tin" />
+
     </LinearLayout>
 
 </LinearLayout>
